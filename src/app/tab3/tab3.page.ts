@@ -21,19 +21,16 @@ constructor(
         console.log('non connecte');
         this.connected = false;
       }
-     // else{
-       // console.log('connecte');
+      // else{
+        // console.log('connecte');
         //this.connected = true;
+        login(){
+        }
       }
 
     //})
   //}
 
 
-  //login(){
-    //console.log('email:'  + this.dataUser.email)
-    //console.log('password:' + this.dataUser.password) 
-//this.afAuth.auth.signInWidthEmailAndPassword(this.dataUser.email,this.dataUser.password);
-  //}
 
 //}

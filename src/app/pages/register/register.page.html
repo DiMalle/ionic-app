@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Register
+      <ion-icon name="people-circle-sharp"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="registerForm">
+    <div class="form">
+      <div class="input-form">
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-input type="email" name="email" formControlName="email" placeholder="Email" required></ion-input>
+        <ion-label>
+          Password
+        </ion-label>
+        <ion-input formControlName="password" name="password" type="password" placeholder="Password" required>
+        </ion-input>
+      </div>
+      <div class="button button-register">
+        <a (click)="register()"> Register</a>
+      </div>
+    </div>
+  </form>
+</ion-content>

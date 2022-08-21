@@ -2,14 +2,17 @@
   <ion-toolbar>
 
     <ion-buttons slot="start"></ion-buttons>
-    <ion-back-button  defaultHref="/Tab3"  text="Tab3"></ion-back-button>
+    <!-- <ion-back-button defaultHref="/Tab3" text="Tab3"></ion-back-button> -->
+    <ion-button slot="end" color="danger" (click)="logOut()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
 
     <ion-title>formulaire</ion-title>
   </ion-toolbar>
- 
+
 </ion-header>
 <ion-content>
-  <div>
+  <!-- <div>
     <ion-item>
       <ion-label color="light"><strong>Matricule</strong></ion-label>
       <ion-input color="light" type="matricule" [(ngModel)]="matricule" placeholder="entre matricule"></ion-input>
@@ -86,7 +89,7 @@
       <div class="col-xs-12 col-sm-12 col-md-12 text-center">
       <button type="submit" class="btn btnprimary">Enregistrer</button>
       </div>
-      </div>
+      </div> -->
 
 
 
