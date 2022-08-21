@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start"></ion-buttons>
+    <ion-back-button  defaultHref="/Tab3"  text="Tab3"></ion-back-button>
+
+    <ion-title>formulaire</ion-title>
+  </ion-toolbar>
+ 
+</ion-header>
+<ion-content>
+  <div>
+    <ion-item>
+      <ion-label color="light"><strong>Matricule</strong></ion-label>
+      <ion-input color="light" type="matricule" [(ngModel)]="matricule" placeholder="entre matricule"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light"> <strong>Nom</strong> </ion-label>
+      <ion-input color="light" type="nom" [(ngModel)]="nom" placeholder="entre le nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="light">prenom</ion-label>
+      <ion-input color="light" type="prenom" [(ngModel)]="prenom" placeholder="entre le prenom"></ion-input>
+    </ion-item>
+    <strong color="light">Sexe:</strong>
+<select name="sexe" id="" class="form-control">
+    <option value=""> Choisissez </option>
+    <option value="Masculin">Masculin</option>
+    <option value="Feminin">Feminin</option>
+</select>
+
+   
+
+    <ion-item>
+        <strong color="light">AnnéeExperience:</strong>
+      <ion-input type="text" name="anneeexperience" class="form-control" placeholder=""></ion-input>
+ </ion-item>
+
+    <ion-item>
+      <ion-label>Situation Matrimoniale</ion-label>
+      <ion-input type="text" name="situation" placeholder="entre situation"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nombre de travailleur</ion-label>
+      <ion-input type="text" name="nbr" placeholder="entre un Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Site</ion-label>
+      <ion-input type="text" name="site" placeholder="entre site"></ion-input>
+    </ion-item>  
+
+
+    <ion-item>
+      <ion-label>Village</ion-label>
+      <ion-input type="text" name="village" placeholder="entre village"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Surface</ion-label>
+      <ion-input type="text" name="surfece" placeholder="entre surfece"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Culture</ion-label>
+      <ion-input type="text" name="culture" placeholder="entre culture"></ion-input>
+    </ion-item> 
+    
+    <ion-item>
+      <ion-label>Produit</ion-label>
+      <ion-input type="text" name="produit" placeholder="entre produit"></ion-input>
+    </ion-item>
+
+    
+
+   
+    <ion-item>
+      <ion-label>Geolocalisation</ion-label>
+      <ion-input type="text" name="geolo" placeholder="entre geolo"></ion-input>
+    </ion-item>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+      <button type="submit" class="btn btnprimary">Enregistrer</button>
+      </div>
+      </div>
+
+
+
+</ion-content>

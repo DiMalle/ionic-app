@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+ Homme Enqueté
+    </ion-title>
+  </ion-toolbar >
+</ion-header>
+<ion-content padding>
+ 
+  <ion-list >
+    <ion-item>
+    
+      <ion-label color="primary">Nom</ion-label>
+      <ion-input type="text"  [(ngModel)]=firebasenom></ion-input>
+
+      <ion-label color="primary">Prenom</ion-label>
+      <ion-input type="text" [(ngModel)]=firebasenom ></ion-input>
+       
+</ion-item>
+
+<ion-item *ngFor="let item of items |async">
+  <ion-label>{{item.nom}}</ion-label>
+  <ion-label>{{item.prenom}}</ion-label>
+
+</ion-item>
+</ion-list>
+
+  </ion-content>
+ 

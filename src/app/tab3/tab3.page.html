@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="light">
+  <ion-icon name="people-circle-sharp"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="!connected">
+  <ion-item>
+    <ion-label color="light">Email</ion-label>
+    <ion-input color="light" type="email" [(ngModel)]="dataUser.email" placeholder="adresse email"></ion-input><br>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light">Mot de passe</ion-label>
+    <ion-input color="light" type="password" [(ngModel)]="dataUser.password" placeholder="mot de pass"></ion-input>
+    </ion-item>
+   <ion-item>
+  <ion-button slot="end">Mot de passe oublié</ion-button>
+    </ion-item>
+<ion-item routerLink="/formulaire">
+    <ion-button fill="outline" shape="round" expand="block" (click)="login()">connecxion</ion-button>
+  </ion-item><br> 
+    <ion-button shape="round" expand="block">inscription</ion-button> 
+  <ion-item>
+    
+    <ion-button shape="round" slot="start">facebook
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-button>
+<ion-button slot="">
+    <ion-icon name="logo-google"></ion-icon>google
+  </ion-button>
+  </ion-item>
+</div>
+</ion-content>
